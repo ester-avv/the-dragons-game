@@ -25,7 +25,7 @@ export default class PVE extends Battle {
     return 1;
   }
     
-  fightTime(enemy: SimpleFighter | Monster) {
+  private fightTime(enemy: SimpleFighter | Monster) {
     this.player.attack(enemy);
     if (enemy.lifePoints > 0) {
       enemy.attack(this.player);
